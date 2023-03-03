@@ -15,6 +15,7 @@ public class Argprograma40clae1ejercicio2 {
 		int ingresos;
 		boolean inmuebles;
 		boolean vehiculos;
+	    //MODIFICADO GITHUB
 		ingresos = 400000;
 		inmuebles = true;
 		activos = false;
