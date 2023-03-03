@@ -53,7 +53,8 @@ public class Argprograma40clae1ejercicio2 {
                     activos = false;
                 }
                 
-                
+	    //MODIFICADO GITHUB
+            
 		if (ingresos>489083) {
 			System.out.println("Ud pertenece al grupo de ingresos altos, no posee subsidio");
 		} else {
