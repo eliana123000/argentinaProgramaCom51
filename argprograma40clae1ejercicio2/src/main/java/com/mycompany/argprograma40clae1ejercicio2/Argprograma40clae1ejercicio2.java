@@ -4,6 +4,8 @@
 
 package com.mycompany.argprograma40clae1ejercicio2;
 
+import java.util.Scanner;
+
 /**
  *
  * @author eliana
@@ -15,10 +17,43 @@ public class Argprograma40clae1ejercicio2 {
 		int ingresos;
 		boolean inmuebles;
 		boolean vehiculos;
-		ingresos = 400000;
-		inmuebles = true;
-		activos = false;
-		vehiculos = false;
+		
+		
+                Scanner sc = new Scanner(System.in) ;
+                
+                System.out.println("Por favor, ingrese el monto de los ingresos familiares");
+                
+                ingresos=sc.nextInt();
+                sc.nextLine();
+                
+                System.out.println("Por favor, ingrese si posee mas de 3 vehiculos menores a 5 años en la familia");
+                
+                if (sc.nextLine().toLowerCase().equals("si")){
+                    vehiculos=true;
+                }
+                else {
+                    vehiculos = false;
+                }
+                
+                System.out.println("Por favor, ingrese si posee mas de 3 inmuebles  familiares");
+                    
+                if (sc.nextLine().toLowerCase().equals("si")){
+                    inmuebles=true;
+                }
+                else {
+                    inmuebles = false;
+                }
+                
+                System.out.println("Por favor, ingrese si posee activos y/0 embarcaciones familiares");
+                
+                if (sc.nextLine().toLowerCase().equals("si")){
+                    activos=true;
+                }
+                else {
+                    activos = false;
+                }
+                
+                
 		if (ingresos>489083) {
 			System.out.println("Ud pertenece al grupo de ingresos altos, no posee subsidio");
 		} else {
