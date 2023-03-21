@@ -48,7 +48,7 @@ public class ArgPrograma40clase3 {
         
         //ejercicio2
         Ejercicio2 ejercicio2 = new Ejercicio2();
-        System.out.println("Vaos a encriptar una frase");
+        System.out.println("Vamos a encriptar una frase");
         System.out.println("Por favor, ingrese su frase favorta:");
         String fraseFavorita= sc.nextLine();
         String fraseEncriptada=ejercicio2.encriptar(fraseFavorita, 1);
