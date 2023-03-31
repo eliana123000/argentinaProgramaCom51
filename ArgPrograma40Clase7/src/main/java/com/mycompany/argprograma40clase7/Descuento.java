@@ -13,7 +13,7 @@ import java.time.LocalDate;
 public abstract class Descuento {
     public LocalDate comienzo;
     public LocalDate fin;
-    public abstract int descuento (int base);
+    public abstract Double descuento (Double base);
     
     
 }

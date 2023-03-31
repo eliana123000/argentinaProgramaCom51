@@ -9,15 +9,15 @@ package com.mycompany.argprograma40clase7;
  * @author eliana
  */
 public class Producto {
-    private int precio;
+    private Double precio;
     private String nombre;
 
-    public Producto(int precio, String nombre) {
+    public Producto(Double precio, String nombre) {
         this.precio = precio;
         this.nombre = nombre;
     }
 
-    public int getPrecio() {
+    public Double getPrecio() {
         return precio;
     }
 

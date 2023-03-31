@@ -13,8 +13,8 @@ public class Carrito {
     private int fecha;
     private ItemCarrito[] items;
 
-    public int precio(Descuento desc) {
-        int base = 0;
+    public Double precio(Descuento desc) {
+        Double base = 0.0;
         for (int i = 0; i < items.length; i++) {
             if (items [i]==null){
                 break;

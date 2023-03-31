@@ -11,8 +11,8 @@ package com.mycompany.argprograma40clase7;
 public class DescuentoPorcentaje extends Descuento {
     private Double porcentaje;
     @Override
-    public int descuento(int base) {
-        return base * porcentaje.intValue();
+    public Double descuento(Double base) {
+        return base * porcentaje;
     }
 
     public DescuentoPorcentaje(Double porcentaje) {

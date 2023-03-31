@@ -14,11 +14,11 @@ public class ArgPrograma40Clase7 {
 
     public static void main(String[] args) {
         Producto producto[] = new Producto[3];
-        producto[0] = new Producto(40, "jabon en polvo");
-        producto[1] = new Producto(10, "esponjas");
-        producto[2] = new Producto(100, "chocolate");
+        producto[0] = new Producto(40.0, "jabon en polvo");
+        producto[1] = new Producto(10.0, "esponjas");
+        producto[2] = new Producto(100.0, "chocolate");
         for (int i = 0; i < producto.length; i++) {
-            System.out.println(producto[i].getNombre() + " " + producto[i].getPrecio());
+            System.out.println(producto[i].getNombre() + " $" + producto[i].getPrecio());
         }
         ItemCarrito items[] = new ItemCarrito[3];
         Scanner sc = new Scanner(System.in);
@@ -37,9 +37,9 @@ public class ArgPrograma40Clase7 {
             }
 
         }
-        Descuento desc = new DescuentoFijo(30);
+        Descuento desc = new DescuentoPorcentajeConTope(0.15, 3000.0);
         Carrito carritoCompras = new Carrito(30032023, items);
-        int total = carritoCompras.precio(desc);
-        System.out.println("Su precio total a pagar es:" + total);
+        Double total = carritoCompras.precio(desc);
+        System.out.println("Su precio total a pagar es:$" + total);
     }
 }

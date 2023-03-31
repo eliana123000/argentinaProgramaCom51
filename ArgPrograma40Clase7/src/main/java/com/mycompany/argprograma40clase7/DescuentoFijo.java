@@ -9,13 +9,13 @@ package com.mycompany.argprograma40clase7;
  * @author eliana
  */
 public class DescuentoFijo extends Descuento {
-    private int monto;
+    private Double monto;
     @Override
-    public int descuento(int base) {
+    public Double descuento(Double base) {
         return monto;
     }
 
-    public DescuentoFijo(int monto) {
+    public DescuentoFijo(Double monto) {
         this.monto = monto;
     }
 

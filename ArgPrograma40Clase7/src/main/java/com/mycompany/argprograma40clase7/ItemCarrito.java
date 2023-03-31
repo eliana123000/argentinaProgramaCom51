@@ -19,7 +19,7 @@ public class ItemCarrito {
         this.cantidad = cantidad;
         this.producto = producto;
     }
-    public int precio(){
+    public Double precio(){
         return cantidad * producto.getPrecio();
     }
 }
